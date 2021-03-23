@@ -5,15 +5,19 @@
 
 
 function Plus(number1, number2) {
+  return number1 + number2;
 }
 
 function Minus(n1, n2) {
+  return n1 - n2;
 }
 
 function Times(int1, int2) {
+  return int1 * int2;
 }
 
 function Divide(num, nums) {
+  return num / nums;
 }
 
 // do not edit code below
