@@ -29,6 +29,10 @@ const characters = [
 ];
 const genshin = () => {
   // write code here
+  let indexSort = characters.sort((a,b) => b.level - a.level);
+  let indexHigh = indexSort[0];
+  let indexLow = indexSort[indexSort.length - 1];
+  return `I have ${characters.length} characters. My most played character is ${indexHigh.name} level ${indexHigh.level} and my least played character is ${indexLow.name} level ${indexLow.level}.`
 };
 
 function Test(fun, result) {
