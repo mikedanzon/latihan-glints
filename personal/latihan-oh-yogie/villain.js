@@ -24,7 +24,11 @@ const villain = [
 ];
 
 function Antagonist() {
-  
+  let output = ``;
+  for (let i = 1; i <= villain.length; i++) {
+    output += `Part ${i} antagonist is ${villain[i-1]} \n`;
+  }
+  return output;
 }
 
-Antagonist();
+console.log(Antagonist())
