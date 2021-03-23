@@ -4,7 +4,12 @@
 // output: "I Like Food And Math"
 
 const jadenCase = (str) => {
-
+  let words = str.split(" ");
+  let results = [];
+  for (let i = 0; i < words.length; i++) {
+      results.push(words[i][0].toUpperCase()+words[i].slice(1))
+  }
+  return results.join(" ");
 };
 
 // do not edit code below
