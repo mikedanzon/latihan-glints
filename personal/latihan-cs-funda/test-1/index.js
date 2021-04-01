@@ -8,7 +8,7 @@ for (let i = 0; i < data; i++) {
         }
     }
     for (let m = data; m > i; m--) {
-        for (let n = data; n > i; n--) {
+        for (let n = data; n >= i; n--) {
             output += 1
         }
     }
