@@ -74,14 +74,11 @@ function getFetch(url) {
     axios.get(url)
     .then((res) => {
         while (count) {
-            // console.log(res.data.results)
-            // if (res.data.next) {
-            //     dataAkhir.data += res.data.results
-            // } else {
-            //     count = 0;
-            // }
-            // count--;
-            dataAkhir.data += res.data.results.filter(item => item.ticker)
+            if (res.data.next) {
+                dataAkhir.data += res.data.results
+            } else {
+                count = 0;
+            }
             count--;
         }
         pushData()
